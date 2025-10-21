@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horarios - Feria UTP 2025</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">🎓</div>
+                <div>
+                    <h1>UTP</h1>
+                    <span>Feria Académica 2025</span>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="programas.html">Programas</a></li>
+                    <li><a href="horarios.html" class="active">Horarios</a></li>
+                    <li><a href="resgistros.html">Registro</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <h1>Horarios de Charlas</h1>
+                <p>Consulta los horarios de nuestras charlas informativas por carrera durante la feria académica 2025</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="schedule-content">
+        <div class="container">
+            <div class="content-header">
+                <h2>Programación de Charlas</h2>
+                <p>Todas las charlas se llevarán a cabo en el Campus Víctor Levi Sasso del 20 al 24 de Octubre</p>
+            </div>
+
+            <div class="schedule-notice">
+                <div class="notice-icon">📢</div>
+                <div class="notice-content">
+                    <h3>Información Importante</h3>
+                    <p>Todas las charlas tienen una duración de 45 minutos seguidos de 15 minutos para preguntas. Se recomienda llegar 10 minutos antes del inicio.</p>
+                </div>
+            </div>
+
+            <div class="schedule-container">
+                <div class="schedule-nav">
+                    <button class="schedule-nav-btn active" data-day="lunes">Lunes 20</button>
+                    <button class="schedule-nav-btn" data-day="martes">Martes 21</button>
+                    <button class="schedule-nav-btn" data-day="miercoles">Miércoles 22</button>
+                    <button class="schedule-nav-btn" data-day="jueves">Jueves 23</button>
+                    <button class="schedule-nav-btn" data-day="viernes">Viernes 24</button>
+                </div>
+
+                <div class="schedule-day active" id="lunes">
+                    <h3>Lunes 20 de Octubre</h3>
+                    <div class="schedule-cards">
+                        <div class="schedule-card">
+                            <div class="time-slot">9:00 - 10:00 AM</div>
+                            <div class="session-info">
+                                <h4>Ingeniería de Sistemas Computacionales</h4>
+                                <p class="session-location">Auditorio Principal - Edificio 1</p>
+                                <p class="session-description">Descubre el mundo de la tecnología y desarrollo de software</p>
+                            </div>
+                        </div>
+                        <div class="schedule-card">
+                            <div class="time-slot">11:00 - 12:00 PM</div>
+                            <div class="session-info">
+                                <h4>Ingeniería Industrial</h4>
+                                <p class="session-location">Auditorio 2 - Edificio 3</p>
+                                <p class="session-description">Optimización de procesos y sistemas organizacionales</p>
+                            </div>
+                        </div>
+                        <div class="schedule-card">
+                            <div class="time-slot">2:00 - 3:00 PM</div>
+                            <div class="session-info">
+                                <h4>Ingeniería Eléctrica</h4>
+                                <p class="session-location">Laboratorio de Energía - Edificio 5</p>
+                                <p class="session-description">Sistemas de energía y sostenibilidad</p>
+                            </div>
+                        </div>
+                        <div class="schedule-card">
+                            <div class="time-slot">4:00 - 5:00 PM</div>
+                            <div class="session-info">
+                                <h4>Administración de Empresas</h4>
+                                <p class="session-location">Aula Magna - Edificio 2</p>
+                                <p class="session-description">Gestión empresarial y liderazgo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="schedule-day" id="martes">
+                    <h3>Martes 21 de Octubre</h3>
+                    <div class="schedule-cards">
+                        <div class="schedule-card">
+                            <div class="time-slot">9:00 - 10:00 AM</div>
+                            <div class="session-info">
+                                <h4>Ingeniería Civil</h4>
+                                <p class="session-location">Auditorio Principal - Edificio 1</p>
+                                <p class="session-description">Infraestructura y desarrollo sostenible</p>
+                            </div>
+                        </div>
+                        <div class="schedule-card">
+                            <div class="time-slot">11:00 - 12:00 PM</div>
+                            <div class="session-info">
+                                <h4>Ingeniería de Sistemas</h4>
+                                <p class="session-location">Auditorio 2 - Edificio 3</p>
+                                <p class="session-description">Inteligencia artificial y machine learning</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="location-guide">
+                <h3>Guía de Ubicaciones</h3>
+                <div class="location-cards">
+                    <div class="location-card">
+                        <h4>Auditorio Principal</h4>
+                        <p>Edificio 1, Planta Baja</p>
+                        <span class="location-capacity">Capacidad: 300 personas</span>
+                    </div>
+                    <div class="location-card">
+                        <h4>Auditorio 2</h4>
+                        <p>Edificio 3, Segundo Piso</p>
+                        <span class="location-capacity">Capacidad: 150 personas</span>
+                    </div>
+                    <div class="location-card">
+                        <h4>Aula Magna</h4>
+                        <p>Edificio 2, Planta Baja</p>
+                        <span class="location-capacity">Capacidad: 200 personas</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="schedule-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>¿Te interesa asistir a nuestras charlas?</h2>
+                <p>Regístrate para garantizar tu cupo y recibir recordatorios de las sesiones que te interesan</p>
+                <a href="resgistros.html" class="btn btn-primary">Registrarse Ahora</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">🎓</div>
+                        <div>
+                            <h3>UTP</h3>
+                            <span>Feria Académica 2025</span>
+                        </div>
+                    </div>
+                    <p>Universidad Tecnológica de Panamá<br>Vía Centenario, Campus Víctor Levi Sasso</p>
+                    <div class="contact-info">
+                        <p>📞 (507) 560-3000</p>
+                        <p>✉️ feria@utp.ac.pa</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="programas.html">Programas Académicos</a></li>
+                        <li><a href="horarios.html">Horarios</a></li>
+                        <li><a href="resgistros.html">Registro</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="#">Guía del Estudiante</a></li>
+                        <li><a href="#">Becas y Ayudas</a></li>
+                        <li><a href="#">Vida Estudiantil</a></li>
+                        <li><a href="#">Investigación</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">YouTube</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Universidad Tecnológica de Panamá. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navegación entre días
+        document.querySelectorAll('.schedule-nav-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                // Remover clase active de todos los botones y días
+                document.querySelectorAll('.schedule-nav-btn').forEach(btn => btn.classList.remove('active'));
+                document.querySelectorAll('.schedule-day').forEach(day => day.classList.remove('active'));
+                
+                // Agregar clase active al botón clickeado
+                button.classList.add('active');
+                
+                // Mostrar el día correspondiente
+                const dayId = button.getAttribute('data-day');
+                document.getElementById(dayId).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>

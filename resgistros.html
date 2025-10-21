@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Feria UTP 2025</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">🎓</div>
+                <div>
+                    <h1>UTP</h1>
+                    <span>Feria Académica 2025</span>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="programas.html">Programas</a></li>
+                    <li><a href="horarios.html">Horarios</a></li>
+                    <li><a href="registro.html" class="active">Registro</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <h1>Registro en Línea</h1>
+                <p>Completa el formulario para registrarte en la Feria Académica 2025 y recibir información personalizada</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="registration-content">
+        <div class="container">
+            <div class="registration-container">
+                <div class="registration-form-container">
+                    <form class="registration-form">
+                        <div class="form-section">
+                            <h3 class="form-section-title">
+                                <span class="form-section-icon">👤</span>
+                                Información Personal
+                            </h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="nombre">Nombre Completo *</label>
+                                    <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre completo">
+                                </div>
+                                <div class="form-group">
+                                    <label for="cedula">Cédula o Pasaporte *</label>
+                                    <input type="text" id="cedula" name="cedula" required placeholder="Ej: 8-800-000">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Correo Electrónico *</label>
+                                    <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="telefono">Teléfono *</label>
+                                    <input type="tel" id="telefono" name="telefono" required placeholder="+507 6000-0000">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="fecha_nacimiento">Fecha de Nacimiento</label>
+                                    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+                                </div>
+                                <div class="form-group">
+                                    <label for="colegio">Colegio de Procedencia</label>
+                                    <input type="text" id="colegio" name="colegio" placeholder="Nombre de tu colegio">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h3 class="form-section-title">
+                                <span class="form-section-icon">🎯</span>
+                                Interés Académico
+                            </h3>
+                            <div class="form-group">
+                                <label for="carrera">Carrera de Interés Principal *</label>
+                                <select id="carrera" name="carrera" required>
+                                    <option value="">Selecciona una carrera</option>
+                                    <option value="sistemas">Ingeniería de Sistemas Computacionales</option>
+                                    <option value="civil">Ingeniería Civil</option>
+                                    <option value="electrica">Ingeniería Eléctrica</option>
+                                    <option value="administracion">Licenciatura en Administración</option>
+                                    <option value="arquitectura">Arquitectura</option>
+                                    <option value="industrial">Ingeniería Industrial</option>
+                                    <option value="otra">Otra carrera</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="carrera_alternativa">Carrera de Interés Alternativa</label>
+                                <select id="carrera_alternativa" name="carrera_alternativa">
+                                    <option value="">Selecciona una alternativa</option>
+                                    <option value="sistemas">Ingeniería de Sistemas</option>
+                                    <option value="civil">Ingeniería Civil</option>
+                                    <option value="electrica">Ingeniería Eléctrica</option>
+                                    <option value="administracion">Administración</option>
+                                    <option value="arquitectura">Arquitectura</option>
+                                    <option value="industrial">Ingeniería Industrial</option>
+                                    <option value="ninguna">Ninguna</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h3 class="form-section-title">
+                                <span class="form-section-icon">📅</span>
+                                Preferencias de la Feria
+                            </h3>
+                            <div class="form-group">
+                                <label for="fecha_visita">Fecha de Visita Preferida *</label>
+                                <select id="fecha_visita" name="fecha_visita" required>
+                                    <option value="">Selecciona una fecha</option>
+                                    <option value="lunes">Lunes 20 de Octubre</option>
+                                    <option value="martes">Martes 21 de Octubre</option>
+                                    <option value="miercoles">Miércoles 22 de Octubre</option>
+                                    <option value="jueves">Jueves 23 de Octubre</option>
+                                    <option value="viernes">Viernes 24 de Octubre</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Charlas de tu interés (Puedes seleccionar varias)</label>
+                                <div class="checkbox-grid">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="charlas" value="sistemas">
+                                        <span class="custom-checkbox"></span>
+                                        Ingeniería de Sistemas
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="charlas" value="civil">
+                                        <span class="custom-checkbox"></span>
+                                        Ingeniería Civil
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="charlas" value="electrica">
+                                        <span class="custom-checkbox"></span>
+                                        Ingeniería Eléctrica
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="charlas" value="administracion">
+                                        <span class="custom-checkbox"></span>
+                                        Administración
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="charlas" value="arquitectura">
+                                        <span class="custom-checkbox"></span>
+                                        Arquitectura
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="charlas" value="industrial">
+                                        <span class="custom-checkbox"></span>
+                                        Ingeniería Industrial
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h3 class="form-section-title">
+                                <span class="form-section-icon">💬</span>
+                                Información Adicional
+                            </h3>
+                            <div class="form-group">
+                                <label for="comentarios">Comentarios o Preguntas</label>
+                                <textarea id="comentarios" name="comentarios" rows="4" placeholder="¿Tienes alguna pregunta específica o comentario para nosotros?"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label class="checkbox-label large">
+                                    <input type="checkbox" name="newsletter" checked>
+                                    <span class="custom-checkbox"></span>
+                                    Me gustaría recibir información sobre futuros eventos, noticias y oportunidades de la UTP
+                                </label>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large btn-full">
+                            <span class="btn-icon">✓</span>
+                            Completar Registro
+                        </button>
+                    </form>
+                </div>
+
+                <div class="registration-benefits">
+                    <h3>Beneficios de Registrarse</h3>
+                    <div class="benefits-list">
+                        <div class="benefit-item">
+                            <div class="benefit-icon">🎁</div>
+                            <div class="benefit-content">
+                                <h4>Kit de Bienvenida</h4>
+                                <p>Recibe material informativo y souvenirs de la UTP</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">📧</div>
+                            <div class="benefit-content">
+                                <h4>Información Personalizada</h4>
+                                <p>Te enviaremos detalles específicos de la carrera de tu interés</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">⏰</div>
+                            <div class="benefit-content">
+                                <h4>Recordatorios</h4>
+                                <p>Recibirás alertas de las charlas que seleccionaste</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">🚀</div>
+                            <div class="benefit-content">
+                                <h4>Acceso Preferencial</h4>
+                                <p>Pase express para evitar filas en la feria</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">🎯</div>
+                            <div class="benefit-content">
+                                <h4>Sorteos Exclusivos</h4>
+                                <p>Participa en rifas solo para registrados</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-support">
+                        <h4>¿Necesitas ayuda?</h4>
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <span class="contact-icon">📞</span>
+                                <span>(507) 560-3000</span>
+                            </div>
+                            <div class="contact-method">
+                                <span class="contact-icon">✉️</span>
+                                <span>feria@utp.ac.pa</span>
+                            </div>
+                            <div class="contact-method">
+                                <span class="contact-icon">🕒</span>
+                                <span>Lun-Vie: 8:00 AM - 4:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">🎓</div>
+                        <div>
+                            <h3>UTP</h3>
+                            <span>Feria Académica 2025</span>
+                        </div>
+                    </div>
+                    <p>Universidad Tecnológica de Panamá<br>Vía Centenario, Campus Víctor Levi Sasso</p>
+                    <div class="contact-info">
+                        <p>📞 (507) 560-3000</p>
+                        <p>✉️ feria@utp.ac.pa</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="programas.html">Programas Académicos</a></li>
+                        <li><a href="horarios.html">Horarios</a></li>
+                        <li><a href="registro.html">Registro</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="#">Guía del Estudiante</a></li>
+                        <li><a href="#">Becas y Ayudas</a></li>
+                        <li><a href="#">Vida Estudiantil</a></li>
+                        <li><a href="#">Investigación</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">YouTube</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Universidad Tecnológica de Panamá. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.registration-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simular envío exitoso
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            
+            submitBtn.innerHTML = '<span class="btn-icon">⏳</span> Procesando...';
+            submitBtn.disabled = true;
+            
+            setTimeout(() => {
+                alert('¡Registro completado con éxito! Te hemos enviado un correo de confirmación.');
+                this.reset();
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
